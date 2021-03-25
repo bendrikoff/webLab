@@ -1,0 +1,269 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    <title>Index</title>
+    <meta charset="utf-8">
+    <link media="all" rel="stylesheet" type="text/css"  href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="./scripts/script.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+   
+    </head>
+<body>
+ <div class="overlay"></div>
+  <div class="upBttn"><div class="arrow">↑</div></div>
+  <div class="dialog">
+      <p>Это окно, которое сделано на html5 и javascript</p>
+      <button class="close">Закрыть</button>
+  </div>
+   <header>
+       <nav>
+          <ul>
+              <li class="menu-item"><a href="./publications.html"><img src="./img/icons/publications.png" alt="">ПУБЛИКАЦИИ</a></li>
+              <li class="menu-item"><a href=""><img src="./img/icons/new.png" alt="">НОВИНКИ</a></li>
+              <li class="menu-item"><a href=""><img src="./img/icons/top.png" alt="">ТОП</a>
+                  <ul class="sub-menu">
+                      <li><a href="">Топ 100</a></li>
+                      <li><a href="">Категории</a></li>
+                  </ul>
+              </li>
+              <li class="menu-item"><a href=""><img src="./img/icons/search.png" alt=""></a></li>
+          
+          </ul>
+       </nav>
+   </header>
+   
+   <script>
+       var el =document.getElementsByClassName('menu-item');
+                      
+
+       for(var i=0;i<el.length;i++){
+           el[i].addEventListener('mouseenter',showSub,false);
+           el[i].addEventListener('mouseleave',hideSub,false);
+       }
+       function showSub(){
+           if(this.children.length>1){
+               this.children[1].style.opacity='1';
+               this.children[1].style.overflow='visible';
+               
+           }
+       }
+       function hideSub(){
+           if(this.children.length>1){
+               this.children[1].style.opacity='0';
+               this.children[1].style.overflow='hide';
+               
+           }
+       }
+    
+   </script>
+   
+    <div class="slider">
+       <div class="topItem">
+           <h1>1</h1><h2>место</h2><a href="./desc.html"><img src="./img/1slider.png" alt=""><p>PUBG MOBILE</p></a>
+       </div>
+       <div class="topItem">
+           <h1>2</h1><h2>место</h2><a href="./desc.html"><img src="./img/2slider.png" alt=""><p>BRAWL STARS</p></a>
+           </div>
+       <div class="topItem"> 
+           <h1>3</h1><h2>место</h2><a href=""><img src="./img/3slider.png" alt=""><p>Last Day on Earth</p></a>
+       </div>
+    </div>
+   <a href="">
+      <div class="telegram" >
+          <h1> заходите в наш telegram канал</h1>
+      </div>
+   </a>
+
+   <section>
+   <div class="container">
+    <div class="items">
+       <h1>Новинки</h1>
+       <div class="tags">
+           <div class="tag">
+            <img src="./img/icons/arcade.png" alt="">
+             <a href=""><p>Аркады</p></a>
+           </div>
+           <div class="tag">
+            <img src="./img/icons/simulators.png" alt="">
+             <a href=""><p>Симуляторы</p></a>
+           </div>
+           <div class="tag">
+            <img src="./img/icons/strategy.png" alt="">
+             <a href=""><p>Стратегии</p></a>
+           </div>
+           <div class="tag">
+            <img src="./img/icons/shooters.png" alt="">
+             <a href=""><p>Шутеры</p></a>
+           </div>
+       </div>
+       <div class="itemsList">
+          <div class="itemsRow">
+              <div class="item">
+                  <a href="">
+                   
+                   <img src="./img/game2.webp" class="avatar" alt="">
+                   <h3>Virtual Villagers  2</h3>
+                   <p>Симуляторы</p>
+                   <div class="appInfo"> <img src="./img/icons/android.png" class="androidIcon" alt=""><p>4.2</p> </div>
+                  </a>
+              </div>
+              <div class="item">
+                  <a href="">
+                   
+                   <img src="./img/game3.webp" class="avatar" alt="">
+                   <h3>Little Big Snake</h3>
+                   <p>Казуальные</p>
+                   <div> <img src="./img/icons/android.png"  alt=""><p>4.2</p> </div>
+                  </a>
+              </div>
+              <div class="item">
+                  <a href="">
+                   
+                   <img src="./img/game4.webp" class="avatar" alt="">
+                   <h3>Modern Commando Strike</h3>
+                   <p>Экшен</p>
+                   <div> <img src="./img/icons/android.png" alt=""><p>4.2</p> </div>
+                  </a>
+              </div>
+              <div class="item">
+                  <a href="">
+                   
+                   <img src="./img/game5.webp" class="avatar" alt="">
+                   <h3>Muse Dash</h3>
+                   <p>Музыка</p>
+                   <div> <img src="./img/icons/android.png" alt=""><p>4.2</p> </div>
+                  </a>
+              </div>
+              <div class="item">
+                  <a href="">
+                   
+                   <img src="./img/game6.webp" class="avatar" alt="">
+                   <h3>Dungeon Tactics : Heroes</h3>
+                   <p>Экшен</p>
+                   <div> <img src="./img/icons/android.png"alt=""><p>4.2</p> </div>
+                  </a>
+              </div>
+              
+           </div>
+                     <div class="itemsRow">
+              <div class="item">
+                  <a href="">
+                   
+                   <img src="./img/game2.webp" class="avatar" alt="">
+                   <h3>Virtual Villagers  2</h3>
+                   <p>Симуляторы</p>
+                   <div class="appInfo"> <img src="./img/icons/android.png" class="androidIcon" alt=""><p>4.2</p> </div>
+                  </a>
+              </div>
+              <div class="item">
+                  <a href="">
+                   
+                   <img src="./img/game3.webp" class="avatar" alt="">
+                   <h3>Little Big Snake</h3>
+                   <p>Казуальные</p>
+                   <div> <img src="./img/icons/android.png"  alt=""><p>4.2</p> </div>
+                  </a>
+              </div>
+              <div class="item">
+                  <a href="">
+                   
+                   <img src="./img/game4.webp" class="avatar" alt="">
+                   <h3>Modern Commando Strike</h3>
+                   <p>Экшен</p>
+                   <div> <img src="./img/icons/android.png" alt=""><p>4.2</p> </div>
+                  </a>
+              </div>
+              <div class="item">
+                  <a href="">
+                   
+                   <img src="./img/game5.webp" class="avatar" alt="">
+                   <h3>Muse Dash</h3>
+                   <p>Музыка</p>
+                   <div> <img src="./img/icons/android.png" alt=""><p>4.2</p> </div>
+                  </a>
+              </div>
+              <div class="item">
+                  <a href="">
+                   
+                   <img src="./img/game6.webp" class="avatar" alt="">
+                   <h3>Dungeon Tactics : Heroes</h3>
+                   <p>Экшен</p>
+                   <div> <img src="./img/icons/android.png"alt=""><p>4.2</p> </div>
+                  </a>
+              </div>
+              
+           </div>          <div class="itemsRow">
+              <div class="item">
+                  <a href="">
+                   
+                   <img src="./img/game2.webp" class="avatar" alt="">
+                   <h3>Virtual Villagers  2</h3>
+                   <p>Симуляторы</p>
+                   <div class="appInfo"> <img src="./img/icons/android.png" class="androidIcon" alt=""><p>4.2</p> </div>
+                  </a>
+              </div>
+              <div class="item">
+                  <a href="">
+                   
+                   <img src="./img/game3.webp" class="avatar" alt="">
+                   <h3>Little Big Snake</h3>
+                   <p>Казуальные</p>
+                   <div> <img src="./img/icons/android.png"  alt=""><p>4.2</p> </div>
+                  </a>
+              </div>
+              <div class="item">
+                  <a href="">
+                   
+                   <img src="./img/game4.webp" class="avatar" alt="">
+                   <h3>Modern Commando Strike</h3>
+                   <p>Экшен</p>
+                   <div> <img src="./img/icons/android.png" alt=""><p>4.2</p> </div>
+                  </a>
+              </div>
+              <div class="item">
+                  <a href="">
+                   
+                   <img src="./img/game5.webp" class="avatar" alt="">
+                   <h3>Muse Dash</h3>
+                   <p>Музыка</p>
+                   <div> <img src="./img/icons/android.png" alt=""><p>4.2</p> </div>
+                  </a>
+              </div>
+              <div class="item">
+                  <a href="">
+                   
+                   <img src="./img/game6.webp" class="avatar" alt="">
+                   <h3>Dungeon Tactics : Heroes</h3>
+                   <p>Экшен</p>
+                   <div> <img src="./img/icons/android.png"alt=""><p>4.2</p> </div>
+                  </a>
+              </div>
+              
+           </div>
+       </div>
+    </div>
+   </div>
+   </section>
+
+
+
+    <footer>
+       <div class="container">
+        <div class="footerItems">
+        <ul>
+             <li class="popUpBttn">обратная связь</li>
+             <li><a href="">правообладателям</a></li>
+             <li><a href="">отказ от ответственности</a></li>
+        </ul>
+        <a href="">
+         <p>ANDROIDGAMES</p>
+        </a>
+         </div>
+       </div>
+    </footer>
+    
+     
+</body>
+</html>
