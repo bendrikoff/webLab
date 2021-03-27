@@ -24,12 +24,15 @@ var div= document.querySelector('.telegram');
     var y;
               
     document.addEventListener('scroll',scrollTg);
+
+
               
     function scrollTg(){
         y=window.scrollY/5;
         var coords = '50% '+ -y +'px';
         div.style.backgroundPosition=coords;
     }
+
 //popup
  var popUpBttn = document.querySelector('.popUpBttn');
  var popUp = document.querySelector('.dialog');
@@ -37,12 +40,15 @@ var div= document.querySelector('.telegram');
  var popUpClose = document.querySelector('.close');
  var overlay = document.querySelector('.overlay');
 
-popUpBttn.onclick= function(){
+popUpBttn.onclick= openDialog;
+function openDialog(){
     overlay.style.visibility='visible';
     popUp.style.visibility='visible';
 
 }
-popUpClose.onclick=function(){
+popUpClose.onclick= closeDialog;
+overlay.onclick=closeDialog;
+function closeDialog(){
     overlay.style.visibility='hidden';
     popUp.style.visibility='hidden';
 
